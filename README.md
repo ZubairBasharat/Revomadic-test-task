@@ -68,5 +68,38 @@ Make sure you have **Node.js >= 20** and **npm** installed.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/my-project.git
-cd my-project
+git clone https://github.com/ZubairBasharat/Revomadic-test-task.git
+cd Revomadic-test-task
+
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`.
+
+---
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm run dev`
+
+Runs the app in the development mode.\
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+The page will reload when you make changes.\
+
+## Here's the live Link
+
+https://revomadic-test-task.vercel.app/

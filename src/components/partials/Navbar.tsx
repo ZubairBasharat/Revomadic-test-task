@@ -5,7 +5,6 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { MoreVertical, Menu, Printer, Search } from "lucide-react";
 import { useState } from "react";
@@ -13,6 +12,7 @@ import SearchDialog from "../common/SearchDialog";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { useDashboardUser } from "@/hooks/useDashboardUser";
 import { Skeleton } from "@/components/ui/skeleton";
+import SearchBar from "../common/Searchbar";
 
 export function DashboardHeader() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -63,10 +63,7 @@ export function DashboardHeader() {
               </div>
 
               {/* Desktop search */}
-              <Input
-                placeholder="Search across campaigns, partners, or assets..."
-                className="hidden lg:block w-105 border-x-0 border-t-0 border-b border-gray-300 rounded-none focus:rounded-sm focus:ring-0 focus:border-black"
-              />
+              <SearchBar placeholderText="Search across campaigns, partners, or assets..." />
 
               {/* Mobile search & meta */}
               <div className="flex flex-row items-center gap-2">

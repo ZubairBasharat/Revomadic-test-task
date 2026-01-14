@@ -12,7 +12,7 @@ export default function SearchBar({
 }: SearchBarProps) {
   return (
     <div className="relative w-105">
-      <Search className="absolute left-0 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
+      <Search className="absolute left-2 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
       <Input
         placeholder={placeholderText}
         className={`
@@ -20,11 +20,13 @@ export default function SearchBar({
           ${centerPlaceholder ? "focus:text-left" : ""}
           pl-7
           border-x-0 border-t-0 border-b
-          border-gray-300
+          border-gray-200
           rounded-none
           focus:rounded-sm
           focus:ring-0
-          focus:border-black
+          shadow-none
+          bg-gray-50
+          focus:shadow-none
         `}
       />
     </div>
